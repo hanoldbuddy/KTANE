@@ -241,12 +241,7 @@ def led_num():
     bottom_left = ['       ','leed','they\'re']
     bottom_right = ['display','says','no','lead','hold on','you are','there','see','cee']
     for i in range(len(top_word)):
-        print('top')
-    
-    
-    
 
-    print(top_word)
 #def maze():
 #    circle_loc = [input('Circle Location...\nROW: '),input('COLUMN: ')]
 #    led_loc = [input('\n\nLED Location...\nROW: '),input('COLUMN: ')]
