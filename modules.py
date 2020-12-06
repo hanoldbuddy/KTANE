@@ -241,7 +241,7 @@ def led_num():
     top_word.sort()
     for i in range(len(top_word)):
         print(top_word[i])
-    input('\n\n')
+    input('\n\n\n')
 #def maze():
 #    circle_loc = [input('Circle Location...\nROW: '),input('COLUMN: ')]
 #    led_loc = [input('\n\nLED Location...\nROW: '),input('COLUMN: ')]
