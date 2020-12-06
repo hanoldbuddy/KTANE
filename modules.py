@@ -232,16 +232,16 @@ def led_star_wire(facts):
         time.sleep(1)
 
 def led_num():
-    top_word = [['yes','first','display','okay','says','nothing','       ','blank','no','led','lead','read','red','reed','leed','hold on','you','you are','your','you\'re','ur','there','they\'re','their','they are','see','c','cee';]]
+    top_word = [['YES', 'MIDDLE-LEFT'],['FIRST', 'TOP-RIGHT'] ,['DISPLAY', 'BOTTOM-RIGHT'],['OKAY', 'TOP-RIGHT'],['SAYS', 'BOTTOM-RIGHT'],
+                ['NOTHING','MIDDLE-LEFT'],['       ', 'BOTTOM-LEFT'],['BLANK', 'MIDDLE-RIGHT'],['NO', 'BOTTOM-RIGHT'],['LED','MIDDLE-LEFT'],
+                ['LEAD', 'BOTTOM-RIGHT'],['READ','MIDDLE-RIGHT'],['RED','MIDDLE-RIGHT'],['REED', 'BOTTOM-LEFT'],['LEED','BOTTOM-LEFT'],
+                ['HOLD ON','BOTTOM-RIGHT'],['YOU', 'MIDDLE-RIGHT'],['YOU ARE', 'BOTTOM-RIGHT'],['YOUR','MIDDLE-RIGHT'],['YOU\'RE','MIDDLE-RIGHT'],
+                ['UR','TOP-LEFT'],['THERE','BOTTOM-RIGHT'],['THEY\'RE','BOTTOM-LEFT'],['THEIR','MIDDLE-RIGHT'],['THEY ARE','MIDDLE-LEFT'],
+                ['SEE','BOTTOM-RIGHT'],['C','TOP-RIGHT'],['CEE','BOTTOM-RIGHT']]
     top_word.sort()
-    top_left = ['ur']
-    top_right = ['first','okay','c']
-    middle_left = ['yes','nothing','led','they are']
-    middle_right = ['blank','read','red','you','your','you\'re','their']
-    bottom_left = ['       ','leed','they\'re']
-    bottom_right = ['display','says','no','lead','hold on','you are','there','see','cee']
     for i in range(len(top_word)):
-
+        print(top_word[i])
+    input('\n\n')
 #def maze():
 #    circle_loc = [input('Circle Location...\nROW: '),input('COLUMN: ')]
 #    led_loc = [input('\n\nLED Location...\nROW: '),input('COLUMN: ')]
