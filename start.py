@@ -63,7 +63,7 @@ while again:
             ss(facts)
             #done
         elif module == 5:
-            led_word(facts)
+            led_word()
         elif module == 6:
             led_num()
         elif module == 7:
