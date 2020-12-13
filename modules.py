@@ -296,7 +296,8 @@ def led_word():
     second_word.sort()
     for i in range(len(second_word)):
         print(second_word[i])
-        
+def led_num():
+
 
 
 #def maze():
@@ -322,4 +323,4 @@ def led_word():
     #                  1,0,0,0,1,0,0,0,1,0,0,0,1,
     #                  1,1,1,1,1,1,1,1,1,1,1,1,1]
 
-print('testing again')
+print('testing bash commands for pushing')
