@@ -64,6 +64,7 @@ while again:
             #done
         elif module == 5:
             led_word()
+            #done
         elif module == 6:
             led_num()
         elif module == 7:
@@ -76,6 +77,7 @@ while again:
             mhg(facts)
         elif module == 11:
             nwl()
+            #done
         elif module == 12:
             led_star_wire(facts)
         elif module == 99:
