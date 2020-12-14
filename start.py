@@ -49,7 +49,7 @@ def init():
 while again:
     facts = init()
     while True:
-        module = int(input("\n\nModule:\n  1 - Needy Knob\n  2 - Wires\n  3 - Button\n  4 - Simon Says\n  5 - LED Word\n  6 - LED Number\n  7 - Maze\n  8 - Symbols\n  9 - Password/Word Scroll\n 10 - Mega Hertz\n 11 - Numbers Wires Letters\n 12 - Wire Star LED\n 99 - GAME OVER\n\n"))
+        module = int(input("\n\nModule:\n  1 - Needy Knob\n  2 - Wires\n  3 - Button\n  4 - Simon Says\n  5 - LED Word\n  6 - LED Number\n  7 - Maze\n  8 - Symbols\n  9 - Password/Word Scroll\n 10 - Mega Hertz\n 11 - Numbers Wires Letters\n 12 - Wire Star LED\n 99 - GAME OVER\n\nModule: "))
         if module == 1:
             needy(facts)
             #done

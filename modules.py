@@ -297,6 +297,41 @@ def led_word():
     for i in range(len(second_word)):
         print(second_word[i])
 def led_num():
+    memory = []
+    top_num = int(input('\nTop Number: '))
+    if top_num == 1:
+        print("\nPositon: 2")
+        memory.append([2,int(input('Label: '))])
+    elif top_num == 2:
+        print("\nPositon: 2")
+        memory.append([2,int(input('Label: '))])
+    elif top_num == 3:
+        print("\nPositon: 3")
+        memory.append([3,int(input('Label: '))])
+    elif top_num == 4:
+        print("\nPositon: 4")
+        memory.append([4,int(input('Label: '))])
+    else:
+        print('\nERROR!!!!!!!!!')
+    print('\n\nSTAGE 1:\n\nPosition: ', memory[0][0], '\nLabel:    ', memory[0][1], '\n\n')
+    top_num = int(input('\nTop Number: '))
+    if top_num == 1:
+        print("\nLabel: 4")
+        memory.append([int(input('Position: ')), 4])
+    elif top_num == 2:
+        print("\nPosition: ", memory[0][0])
+        memory.append([memory[0][0],int(input('Label: '))])
+    elif top_num == 3:
+        print("\nPositon: 1")
+        memory.append([1,int(input('Label: '))])
+    elif top_num == 4:
+        print("\nPosition: ", memory[0][0])
+        memory.append([memory[0][0],int(input('Label: '))])
+    else:
+        print('\nERROR!!!!!!!!!')
+    print('\n\n\nSTAGE 1:\nPosition: ', memory[0][0], '\nLabel:    ', memory[0][1], '\n\nSTAGE 2:\nPosition: ', memory[1][0], '\nLabel:    ', memory[1][1], '\n\n')
+
+
 
 
 
@@ -309,18 +344,16 @@ def led_num():
     #def __init__(self):
     #    self.M = 10
     #    self.N = 8
-    #    self.maze = [ 1,1,1,1,1,1,1,1,1,1,1,1,1,
-    #                  1,0,0,0,0,0,1,0,0,0,0,0,1,
-    #                  1,0,1,1,1,0,1,0,1,1,1,1,1,
-    #                  1,0,1,0,0,0,1,0,0,0,0,0,1,
-    #                  1,0,1,0,1,1,1,1,1,1,1,0,1,
-    #                  1,0,1,0,0,0,1,0,0,0,0,0,1,
-    #                  1,0,1,1,1,0,1,0,1,1,1,0,1,
-    #                  1,0,1,0,0,0,0,0,1,0,0,0,1,
-    #                  1,0,1,1,1,1,1,1,1,1,1,0,1,
-    #                  1,0,0,0,0,0,1,0,0,0,1,0,1,
-    #                  1,0,1,1,1,0,1,0,1,1,1,0,1,
-    #                  1,0,0,0,1,0,0,0,1,0,0,0,1,
-    #                  1,1,1,1,1,1,1,1,1,1,1,1,1]
-
-print('testing bash commands for pushing')
+    #    self.maze =  [[1,1,1,1,1,1,1,1,1,1,1,1,1],
+    #                  1,0,0,0,0,0,1,0,0,0,0,0,1],
+    #                  1,0,1,1,1,0,1,0,1,1,1,1,1],
+    #                  1,0,1,0,0,0,1,0,0,0,0,0,1],
+    #                  1,0,1,0,1,1,1,1,1,1,1,0,1],
+    #                  1,0,1,0,0,0,1,0,0,0,0,0,1],
+    #                  1,0,1,1,1,0,1,0,1,1,1,0,1],
+    #                  1,0,1,0,0,0,0,0,1,0,0,0,1],
+    #                  1,0,1,1,1,1,1,1,1,1,1,0,1],
+    #                  1,0,0,0,0,0,1,0,0,0,1,0,1],
+    #                  1,0,1,1,1,0,1,0,1,1,1,0,1],
+    #                  1,0,0,0,1,0,0,0,1,0,0,0,1],
+    #                  1,1,1,1,1,1,1,1,1,1,1,1,1]]
