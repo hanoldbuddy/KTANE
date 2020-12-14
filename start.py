@@ -67,12 +67,13 @@ while again:
             #done
         elif module == 6:
             led_num()
+            #done
         elif module == 7:
             maze()
         elif module == 8:
-            symbols(facts)
+            symbols()
         elif module == 9:
-            password(facts)
+            password()
         elif module == 10:
             mhg(facts)
         elif module == 11:
@@ -88,4 +89,4 @@ while again:
         compute_score(comp_time, num_modules)
     break
 
-print('Testing Git branching Bash deleting branch yadda yadda')
+print('Testing Git branching2 Bash deleting branch yadda yadda')
