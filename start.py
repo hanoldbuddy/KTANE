@@ -88,5 +88,4 @@ while again:
         compute_score(comp_time, num_modules)
     break
 
-
-print('testing again')
+print('Testing Git branching Bash deleting branch yadda yadda')
