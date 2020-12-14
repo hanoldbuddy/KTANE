@@ -313,7 +313,6 @@ def led_num():
         memory.append([4,int(input('Label: '))])
     else:
         print('\nERROR!!!!!!!!!')
-    print('\n\nSTAGE 1:\n\nPosition: ', memory[0][0], '\nLabel:    ', memory[0][1], '\n\n')
     top_num = int(input('\nTop Number: '))
     if top_num == 1:
         print("\nLabel: 4")
@@ -329,8 +328,47 @@ def led_num():
         memory.append([memory[0][0],int(input('Label: '))])
     else:
         print('\nERROR!!!!!!!!!')
-    print('\n\n\nSTAGE 1:\nPosition: ', memory[0][0], '\nLabel:    ', memory[0][1], '\n\nSTAGE 2:\nPosition: ', memory[1][0], '\nLabel:    ', memory[1][1], '\n\n')
-
+    top_num = int(input('\nTop Number: '))
+    if top_num == 1:
+        print("\nLabel: ", memory[1][1])
+        memory.append([int(input('Position: ')), memory[1][1]])
+    elif top_num == 2:
+        print("\nLabel: ", memory[0][1])
+        memory.append([int(input('Position: ')), memory[0][1]])
+    elif top_num == 3:
+        print("\nPositon: 3")
+        memory.append([3,int(input('Label: '))])
+    elif top_num == 4:
+        print("\nLabel: 4")
+        memory.append([int(input('Position: ')), 4])
+    else:
+        print('\nERROR!!!!!!!!!')
+    top_num = int(input('\nTop Number: '))
+    if top_num == 1:
+        print("\nPositon: ", memory[0][0])
+        memory.append([memory[0][0],int(input('Label: '))])
+    elif top_num == 2:
+        print("\nPositon: 1")
+        memory.append([1,int(input('Label: '))])
+    elif top_num == 3:
+        print("\nPositon: ", memory[1][0])
+        memory.append([memory[1][0],int(input('Label: '))])
+    elif top_num == 4:
+        print("\nPositon: ", memory[1][0])
+        memory.append([memory[1][0],int(input('Label: '))])
+    else:
+        print('\nERROR!!!!!!!!!')
+    top_num = int(input('\nTop Number: '))
+    if top_num == 1:
+        print("\nLabel: ", memory[0][1])
+    elif top_num == 2:
+        print("\nLabel: ", memory[1][1])
+    elif top_num == 3:
+        print("\nLabel: ", memory[3][1])
+    elif top_num == 4:
+        print("\nLabel: ", memory[2][1])
+    else:
+        print('\nERROR!!!!!!!!!')
 
 
 
