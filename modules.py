@@ -112,7 +112,7 @@ def ss(facts):
     list = []
     if facts[4] == 'y':
         while flash:
-            color = input('\n\nInput flashes seperated by a space.\nColor: \nr -  RED\ny - YELLOW\nb -  BLUE\ng -  GREEN\n\n')
+            color = input('\n\nInput most recent flash.\nColor: \nr -  RED\ny - YELLOW\nb -  BLUE\ng -  GREEN\n\n')
             if color == 'n':
                 flash = False
             elif color == 'r':
@@ -130,7 +130,7 @@ def ss(facts):
             time.sleep(2)
     if facts[4] == 'n':
         while flash:
-            color = input('\n\nInput flashes seperated by a space.\nColor: \nr -  RED\ny - YELLOW\nb -  BLUE\ng -  GREEN\n\n')
+            color = input('\n\nInput most recent flash.\nColor: \nr -  RED\ny - YELLOW\nb -  BLUE\ng -  GREEN\n\n')
             if color == 'n':
                 flash = False
             elif color == 'r':
@@ -369,9 +369,17 @@ def led_num():
         print("\nLabel: ", memory[2][1])
     else:
         print('\nERROR!!!!!!!!!')
-
-
-
+    time.sleep(1)
+def password():
+    words = ['about','after','again','below','could','every','first','found','great','house','large','learn','never','other','place','plant','point','right','small','sound','spell','still','study','their','there','these','thing','think','three','water','where','which','world','would','write']
+    first = input('Input FIRST letters with no spaces: ')
+    last = input('Input LAST letters with no spaces: ')
+    for i in range(len(words)):
+        for j in range(len(first)):
+            for k in range(len(last)):
+                if words[i][0] == first[j] and words[i][-1] == last[k]:
+                    print('\n', words[i])
+    input("Press Enter to continue")
 
 #def maze():
 #    circle_loc = [input('Circle Location...\nROW: '),input('COLUMN: ')]
