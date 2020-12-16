@@ -1,6 +1,5 @@
 import sys
 from modules import *
-from symbols import *
 again = True
 completed = 0
 sessions = 1

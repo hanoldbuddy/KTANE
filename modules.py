@@ -1,5 +1,6 @@
-import time
-
+import time, pygame
+import cv2 as cv
+pygame.init()
 def button(facts):
     button_facts = []
     button_facts.append(input("\nColor: "))
@@ -370,10 +371,31 @@ def led_num():
 def password():
     words = ['about','after','again','below','could','every','first','found','great','house','large','learn','never','other','place','plant','point','right','small','sound','spell','still','study','their','there','these','thing','think','three','water','where','which','world','would','write']
     first = input('Input FIRST letters with no spaces: ')
+    second = input('Input SECOND letters with no spaces: ')
+    third = input('Input THIRD letters with no spaces: ')
+    fourth = input('Input FOURTH letters with no spaces: ')
     last = input('Input LAST letters with no spaces: ')
     for i in range(len(words)):
         for j in range(len(first)):
-            for k in range(len(last)):
-                if words[i][0] == first[j] and words[i][-1] == last[k]:
-                    print('\n', words[i])
+            if words[i][0] == first[j]:
+                for k in range(len(second)):
+                    if words[i][1] == second[k]:
+                        for l in range(len(third)):
+                            if words[i][2] == third[l]:
+                                for m in range(len(fourth)):
+                                    if words[i][3] == fourth[m]:
+                                        for n in range(len(last)):
+                                            if words[i][-1] == last[n]:
+                                                print('\n', words[i])
     input("\nPress Enter to continue")
+
+def symbols():
+    size = width, height = 400, 400
+    screen = pygame.display.set_mode(size)
+
+    #for i in range(1,8):
+    #    path = ['symbols\\c1\\', i, '.png']   
+    #    listToStr = ''.join([str(elem) for elem in path]) 
+    #    print(listToStr)  
+    #    img = cv.imread(listToStr)
+    #    cv.imshow("Display window", img)
