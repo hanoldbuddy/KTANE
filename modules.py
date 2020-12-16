@@ -1,7 +1,4 @@
 import time
-from pygame.locals import *
-import pygame
-import numpy as np
 
 def button(facts):
     button_facts = []
@@ -379,27 +376,4 @@ def password():
             for k in range(len(last)):
                 if words[i][0] == first[j] and words[i][-1] == last[k]:
                     print('\n', words[i])
-    input("Press Enter to continue")
-
-#def maze():
-#    circle_loc = [input('Circle Location...\nROW: '),input('COLUMN: ')]
-#    led_loc = [input('\n\nLED Location...\nROW: '),input('COLUMN: ')]
-#    triangle_loc = [input('Circle Location...\nROW: '),input('COLUMN: ')]
-    #pygame.init()
-    #class Maze1:
-    #def __init__(self):
-    #    self.M = 10
-    #    self.N = 8
-    #    self.maze =  [[1,1,1,1,1,1,1,1,1,1,1,1,1],
-    #                  1,0,0,0,0,0,1,0,0,0,0,0,1],
-    #                  1,0,1,1,1,0,1,0,1,1,1,1,1],
-    #                  1,0,1,0,0,0,1,0,0,0,0,0,1],
-    #                  1,0,1,0,1,1,1,1,1,1,1,0,1],
-    #                  1,0,1,0,0,0,1,0,0,0,0,0,1],
-    #                  1,0,1,1,1,0,1,0,1,1,1,0,1],
-    #                  1,0,1,0,0,0,0,0,1,0,0,0,1],
-    #                  1,0,1,1,1,1,1,1,1,1,1,0,1],
-    #                  1,0,0,0,0,0,1,0,0,0,1,0,1],
-    #                  1,0,1,1,1,0,1,0,1,1,1,0,1],
-    #                  1,0,0,0,1,0,0,0,1,0,0,0,1],
-    #                  1,1,1,1,1,1,1,1,1,1,1,1,1]]
+    input("\nPress Enter to continue")
