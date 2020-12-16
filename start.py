@@ -1,6 +1,6 @@
 import sys
 from modules import *
-
+from symbols import *
 again = True
 completed = 0
 sessions = 1
@@ -74,6 +74,7 @@ while again:
             symbols()
         elif module == 9:
             password()
+            #done
         elif module == 10:
             mhg(facts)
         elif module == 11:
@@ -81,6 +82,7 @@ while again:
             #done
         elif module == 12:
             led_star_wire(facts)
+            #done
         elif module == 99:
             again = credits(completed, comp_time, timepermodule)
             break
